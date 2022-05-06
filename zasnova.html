@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Moja Spletna Stran</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="slike/ikona.png" />
+  
+  <!-- Spodnje tri vrstice so za font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <div class="vsebina">
+    
+    <table class="nav">
+      <tr>
+        <td class="greyOnHover"><a href="index.html">Domov</a></td>
+        <td class="greyOnHover"><a href="osnove.html">Osnove</a></td>
+        <td class="greyOnHover"><a href="zgodovina.html">Zgodovina</a></td>
+        <td class="greyOnHover"><a href="delovanje.html">Delovanje</a></td>
+        <td>Zasnova</td>
+      </tr>
+    </table>
+
+    <hr>
+    
+    <h1><u>ZASNOVA PROCESORJA</u></h1>
+    <p>Osnovni koncept CPU je sledeč: <br>
+      V CPU zasnovi je vgrajen seznam osnovnih operacij, ki jih lahko izvaja, tj. nabor ukazov (instruction set). Te operacije lahko vključujejo seštevanje in odštevanje dveh števil,
+       primerjavo števil ali skočne ukaze na različne dele programov. Vsaka izmed teh osnovnih operacij je predstavljena z določenim zaporedjem bitov;
+        to zaporedje se imenuje opcode (operacijska koda) za to določeno operacijo. Pošiljanje določene operacijske kode v CPU bo povzročilo izvajanje operacije, 
+        ki jo ta operacijska koda predstavlja. Za izvajanje inštrukcij v računalniškem programu CPU uporablja operacijsko kodo za to inštrukcijo kot tudi njene argumente 
+        (npr. dve števili, ki jih je treba sešteti - v primeru operacije seštevanja). Računalniški program je zatorej zaporedje inštrukcij, v vsaki inštrukciji je vključena 
+        operacijska koda in argumenti te operacije.</p>
+    <br>
+    <img src="slike/nabor_ukazov.png" width="58%" height="58%" alt="Opcodes">
+    <p class="textPodSliko">Primer nabora ukazov - opcodes</p>
+
+    <br>
+
+    <p><b>Zbirni jezik</b> (angleško assembly language, iz assemble sestavljati) je nizkonivojski programski jezik druge 
+      generacije (2GL) – prve generacije (1GL) je strojna koda – ki je napisan s pomniki. Splošno velja, da ti pomniki 
+      predstavljajo berljive enačice dvojiških zaporedij (ničle in enice), ki jih je treba sestaviti, da dobimo za osrednje 
+      preračunalo razumljive ukaze. Natančno gledano, pomniki predstavljajo ukazne nize (angl. operation codes, skrajšano opcodes), 
+      ki so v osrednjem preračunalu sestavljeni iz ISA (ang. Instruction Set Architecture, sestava ukaznih nizov). Te ukaze pa je nato 
+      navadno treba povezati z določeno skladnjo, da dobimo delujoč in izvršljiv program. Določene programske opreme zbirnikov, kakor je za 
+      zgled FASM, samo zamenjajo pomnike in spremenljivke z ustreznimi ukazi v strojnem programskem jeziku. Tako se dobi ploske izvršilne datoteke, 
+      ki vsebujejo (sicer odvisno od izkušenj posameznega računalniškega ukazopisca) strojne ukazne nize z izjemno postopkovno uspešnostjo.</p>
+
+    <br>
+    <br>
+
+    <a href="delovanje.html">Nazaj</a>
+    <a class="poravnavaDesno" href="index.html">Na prvo stran</a>
+      
+    
+    <br><br><br>
+    
+    <u><b>Viri</b></u>
+    <ul>
+      <li><a href="https://sl.wikipedia.org/wiki/Procesor">https://sl.wikipedia.org/wiki/Procesor</a></li>
+      <li><a href="https://hop.si/2017/03/01/kaj-je-procesor-kako-deluje/">https://hop.si/2017/03/01/kaj-je-procesor-kako-deluje/</a></li>
+      <li><a href="https://www.intel.com/content/www/us/en/homepage.html">https://www.intel.com/content/www/us/en/homepage.html</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Processor">https://en.wikipedia.org/wiki/Processor</a></li>
+    </ul>
+    
+    <footer>April 2022, Gal Končar, R1D</footer>
+
+  </div>
+</body>
+</html>

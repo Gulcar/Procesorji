@@ -1,0 +1,115 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+p {
+  font-size: 110%;
+}
+
+img {
+  /* poravna slike na sredino */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-image: url("slike/bg.jpg");
+  background-size: 50% auto;
+  margin: 0;
+  height: 100%;
+  /*overflow: hidden;*/
+}
+
+a {
+  color: rgb(26, 102, 196);
+}
+
+hr {
+  border: 1px solid rgb(54, 54, 54);
+}
+
+.vsebina {
+  margin: 0px 15%;
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 30vh;
+  background-color: white;
+}
+
+.poravnavaDesno {
+  float: right;
+}
+
+.textPodSliko {
+  font-size: 95%;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+  table-layout: fixed;
+  /*border-collapse: collapse;*/
+}
+
+.nav td {
+  text-align: center;
+  /*border: 1px solid;*/
+  text-decoration: underline;
+}
+
+.greyOnHover {
+  border-radius: 7px;
+  transition: ease 0.5s;
+}
+
+.greyOnHover:hover {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.binarno p {
+  margin: 5px;
+}
+
+.binarno {
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 5em;
+}
+
+@media only screen and (max-width: 700px) {
+  .vsebina {
+    margin: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .vsebina {
+    margin: 0;
+  }
+}
+
+body * {
+  opacity: 0;
+  transform: translateY(-20%);
+  animation: load 0.5s ease-in-out forwards;
+}
+
+@keyframes load {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

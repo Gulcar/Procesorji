@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Moja Spletna Stran</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="slike/ikona.png" />
+
+  <!-- Spodnje tri vrstice so za font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <div class="vsebina">
+    
+    <table class="nav">
+      <tr>
+        <td class="greyOnHover"><a href="index.html">Domov</a></td>
+        <td class="greyOnHover"><a href="osnove.html">Osnove</a></td>
+        <td class="greyOnHover"><a href="zgodovina.html">Zgodovina</a></td>
+        <td>Delovanje</td>
+        <td class="greyOnHover"><a href="zasnova.html">Zasnova</a></td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <h1><u>DELOVANJE PROCESORJA</u></h1>
+    <p>Osnovno delovanje večine CPU-jev je, ne glede na svojo fizično obliko, izvajanje zaporedja shranjenih ukazov imenovanih program. Ukazi so shranjeni v računalniškem spominu. 
+      Obstajajo štirje koraki, ki jih v svojem delovanju uporabljajo skoraj vsi CPU-ji: prevzem ukazov, dekodiranje, izvajanje in zapis rezultatov. </p>
+    <p>Glede na strojno implementacijo, procesorje v grobem delimo na dve kategoriji: <i>RISC</i> (Reduced Instruction Set Computer) in <i>CISC</i> (Complex Instruction Set Computer).</p>
+    <br>
+    <img src="slike/zgradba_cpe.png" width="45%" height="45%" style="border: solid black 1px" alt="Zgradba CPE">
+    <p class="textPodSliko">Zgradba CPE</p>
+
+    <br>
+
+    <p>Ko dobi kontrolna enota ukaz za izvedbo operacije, ukaže delovnemu pomnilniku, da pošlje potrebne podatke v register, 
+      ALE pa ukaže katera operacija naj se izvede nad njimi. Ko se operacija zaključi, ALE preda izvajanje kontrolni enoti, ta pa poskrbi, 
+      da se rezultati prenesejo v delovni pomnilnik in od njega zahteva nov ukaz.</p>
+
+    <p>
+      Ukazi v procesorju se izvajajo po postopku:
+      <ol>
+        <li>Prevzem ukaza</li>
+        <li>Dekodiranja ukaza</li>
+        <li>Priprava podatkov</li>
+        <li>Izvedba operacije</li>
+        <li>Shranjevanje rezultatov</li>
+      </ol>
+    </p>
+
+    <p>Procesor deluje hitreje, če se naštete faze izvajajo vzporedno. Namreč prvemu shranjuje rezultate, drugemu izvaja operacijo, tretjemu pripravlja podatke, 
+      četrtemu izvede operacijo in petega prevzema (bere) iz pomnilnika. Tako organizirani procesorji se imenujejo cevovodni procesorji (tako delujejo vsi današnji procesorji na trgu).</p>
+
+    <br>
+    <br>
+
+    <a href="zgodovina.html">Nazaj</a>
+    <a class="poravnavaDesno" href="zasnova.html">Naprej</a>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>April 2022, Gal Končar, R1D</footer>
+
+  </div>
+</body>
+</html>

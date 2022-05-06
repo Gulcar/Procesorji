@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Moja Spletna Stran</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="slike/ikona.png" />
+  
+  <script defer src="binarno.js"></script>
+
+  <!-- Spodnje tri vrstice so za font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <div class="vsebina">
+
+    <table class="nav">
+      <tr>
+        <td class="greyOnHover"><a href="index.html">Domov</a></td>
+        <td>Osnove</td>
+        <td class="greyOnHover"><a href="zgodovina.html">Zgodovina</a></td>
+        <td class="greyOnHover"><a href="delovanje.html">Delovanje</a></td>
+        <td class="greyOnHover"><a href="zasnova.html">Zasnova</a></td>
+      </tr>
+    </table>
+
+    <hr>
+
+    <h1><u>OSNOVE PROCESORJEV</u></h1>
+    <p><b>Procesor</b> ali osrednja/centralno procésna enota (CPE; angleško Central processing unit - CPU) je osrednji del računalnika, 
+      ki skrbi za izračunavanje in obdelavo (procesiranje) podatkov (dvojiških števil) ter nadzor in upravljanje drugih enot. 
+      Procesorji so narejeni iz silicija, ovoji pa so se skozi zgodovino zelo spreminjali (keramika, aluminij). 
+      Pri tem bi bilo pametno, če bi omenil še proizvodnjo toplote (kar veliko). 
+      Pri procesorjih je načeloma več je bolje, razen toplote in porabe energije. </p>
+    <p>Dvojiški (binarni) številski sistem je številski sistem z osnovo 2. Edini števki uporabljeni v tem sistemu sta 0 in 1. 
+      Ker je dvojiški številski sistem enostavno realizirati z elektronskimi vezji, je uporabljen v praktično vseh računalnikih. 
+      V računalniku je uporabljen zato, ker vezja lahko ponazorijo signal samo z 1 (električni tok je) ali 0 (ni električnega toka). 
+      Predstavlja teoretično osnovo digitalnega računalnika. </p>
+    <br>
+
+    <div style="text-align: center;" class="binarno">
+      <input type="number" value="69" id="bin-in">
+      <p>je v binarnem: </p>
+      <p id="bin-out" style="font-weight: bold;"></p>
+    </div>
+
+    <br>
+
+    <img src="slike/cpu3.jpg" width="60%" height="60%" alt="Procesorja Intel in AMD">
+    <p class="textPodSliko">Procesorja Intel in AMD</p>
+
+    <br>
+
+    <p>Procesorji se načeloma delijo po številu tranzistorjev (transistor), jeder (core), niti (thread), podnožju (socket) in velikosti pomnilnika. 
+      Jedro je računski del procesorja, narejen iz silicija. Je glavni krivec za proizvodnjo toplote (poleg tranzistorjev). Nekateri procesorji imajo poleg procesorskega 
+      jedra še grafično, ki je namenjeno računanju grafike. Nit je proces, ki ga procesor opravlja, če je procesor večniten, to pomeni da lahko opravlja več procesov naenkrat 
+      in je s tem hitrejši. Na primer, če je procesor 2 niten, bi moral v teoriji biti 1-krat hitrejši. V praksi pa ni tako: imata lahko različni jedri (Prescott, Silverthrone), 
+      različna delovna takta, proizvajalca, FSB … Podnožje je tip povezave z matično ploščo v obliki nožic (med glavnimi so LGA 775, LGA 1156, LGA 1366, AM2+, AM3). 
+      Pomnilnik v procesorju je namenjen začasnem shranjevanju podatkov, torej večja kot je njegova kapaciteta, bolje je.</p>
+
+
+    <br>
+    <br>
+
+    <a href="index.html">Nazaj</a>
+    <a class="poravnavaDesno" href="zgodovina.html">Naprej</a>
+       
+    <footer>April 2022, Gal Končar, R1D</footer> 
+
+
+  </div>
+</body>
+</html>
